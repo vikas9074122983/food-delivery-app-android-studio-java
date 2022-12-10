@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".restaurant.RestSetting">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/upprl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/re_profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/firsticon"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/re_update_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/re_profile_image"
+            android:layout_alignEnd="@+id/re_profile_image"
+            android:layout_marginTop="-55dp"
+            android:layout_marginEnd="26dp"
+            android:backgroundTint="#4ACBDC"
+            android:src="@drawable/ic_baseline_camera_alt_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/re_profile_image"
+            android:id="@+id/upllb">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant Name"
+                    android:textColor="#232222"
+                    android:textSize="15dp" />
+                <EditText
+                    android:id="@+id/re_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name..."
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#232222"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/re_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/up_full_name"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:hint="Phone Number.."
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant Address"
+                    android:textColor="#232222"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/re_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/up_phone"
+                    android:hint="Enter Address..."
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurant City"
+                    android:textColor="#232222"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/re_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/up_phone"
+                    android:hint="Enter city..."
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Delivery Charge"
+                    android:textColor="#232222"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/del_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/up_phone"
+                    android:hint="Enter Delivery Charge..."
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/upllb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/re_savebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/input_design"
+                android:backgroundTint="@color/colorPrimary"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

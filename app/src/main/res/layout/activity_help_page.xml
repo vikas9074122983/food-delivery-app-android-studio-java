@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.HelpPage">
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Help Center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Helpline Number"
+            android:textColor="#323030"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/fui_ic_phone_white_24dp"
+            android:drawableTint="#673AB7"/>
+        <TextView
+            android:id="@+id/help_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="000000000"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Whatsapp Number"
+            android:textColor="#323030"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_whatsapp_symbol"/>
+        <TextView
+            android:id="@+id/wp_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="000000000"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Email"
+            android:textColor="#323030"
+            android:textSize="15dp"
+            android:layout_margin="5dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawableTint="#673AB7"/>
+        <TextView
+            android:id="@+id/help_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="company@company.com"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
